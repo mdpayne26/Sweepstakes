@@ -8,27 +8,32 @@ namespace Sweepstakes
 {
     class ISweepstakesManager
     {
+        Sweepstakes sweepstakes = new Sweepstakes();
+
         internal Sweepstakes Sweepstakes
         {
-            get => default(Sweepstakes.Sweepstakes);
+            get => sweepstakes;
             set
             {
-            }
-        }
-
-        internal Customer Customer
-        {
-            get => default(Sweepstakes.Customer);
-            set
-            {
+                sweepstakes = value;
             }
         }
 
         public MarketingFirm MarketingFirm
         {
-            get => default(Sweepstakes.MarketingFirm);
+            get => MarketingFirm;
             set
             {
+                MarketingFirm = value;
+            }
+        }
+
+        internal Contestant Contestant
+        {
+            get => Contestant;
+            set
+            {
+                Contestant = value;
             }
         }
 

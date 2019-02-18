@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Sweepstakes
 {
-    class Customer
+    class Contestant
     {
+
     }
 }
