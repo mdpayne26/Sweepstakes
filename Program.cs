@@ -8,6 +8,14 @@ namespace Sweepstakes
 {
     class Program
     {
+        internal ISweepstakesManager ISweepstakesManager
+        {
+            get => default(Sweepstakes.ISweepstakesManager);
+            set
+            {
+            }
+        }
+
         static void Main(string[] args)
         {
         }
